@@ -1,9 +1,7 @@
 import os
 
 from typing import List, Optional
-
 from PIL import Image
-import appex
 
 
 def open_images(input_dir: str) -> List[Optional[Image.Image]]:
@@ -80,6 +78,7 @@ def img_revert(img: Image.Image) -> Image.Image:
 
 
 if __name__ in "__main__":
+    import appex
     # input_directory = r"c:\Users\Elias\Desktop\pic_integrity\imgs"
     # imgs = open_images(input_directory)
     imgs = appex.get_images()

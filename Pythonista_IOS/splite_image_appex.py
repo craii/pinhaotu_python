@@ -1,8 +1,8 @@
+import io
+import math
+import random
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
-import random
-import math
-import io
 
 def split_image(image, num_pieces=8, total_fragments=100, bg_color='white', invert_colors=False):
     """
@@ -262,8 +262,8 @@ def save_split_images(split_images, original_filename, bg_color='white'):
     
     return file_paths
 
-# Example usage:
-if __name__ == "__main__":
+
+if __name__ in "__main__":
     # Load an image
     #image_path = "a.JPG"
     import appex
