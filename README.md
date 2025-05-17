@@ -1,5 +1,5 @@
 # pinhaotu_python
-抖音拼好图的拆图、拼图的python实现， Pythonista_IOS 文件夹内的py文件可通过 IOS app: pythonista 实现与相册交互，直接在相册内完成**拆图、拼图** 操作
+抖音拼好图的拆图、拼图的python实现， Pythonista_IOS 文件夹内的py文件可通过 IOS app: pythonista 实现与相册交互，直接在苹果ios相册内完成**拆图、拼图** 操作
 
 # Pythonista_IOS
 其中的 py 文件因使用了pythonista 提供的 appex 库，只能在 pythonista 中运行。使用时，建议请在 pythonista中为对应文件配置相应的 share extension menu
