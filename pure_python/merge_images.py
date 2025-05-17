@@ -43,6 +43,7 @@ def merge_images(*images: Image.Image, colour: tuple=(255, 255, 255)) -> None:
     
     # 保存结果
     new_pic.show()
+    new_pic.save("merged_image.png")
     print(f"合并完成")
     return new_pic
 
@@ -73,10 +74,13 @@ def img_revert(img: Image.Image) -> Image.Image:
             r, g, b, a = img_data[x, y]
             # 保持透明度不变，反转RGB值
             reverted_data[x, y] = (255 - r, 255 - g, 255 - b, a)
-    
+    reverted_img.show()
+    reverted_img.save("reverted_merged_image.png")
     return reverted_img
 
 if __name__ in "__main__":
-    input_directory = r"c:\Users\dadiaoge\Desktop\pic_integrity\imgs"
+    input_directory = r"c:\Users\Elias\Desktop\pic_integrity\imgs"
     imgs = open_images(input_directory)
-    merge_images(*imgs, colour=(255,255,255))  # 使用默认的白色作为过滤颜色
+    #merge_images(*imgs, colour=(255,255,255))  # 使用默认的白色作为过滤颜色
+    m_img = merge_images(*imgs, colour=(0,0,0))  # 使用默认的白色作为过滤颜色
+    img_revert(m_img)
