@@ -12,7 +12,7 @@ def open_images(input_dir: str) -> List[Optional[Image.Image]]:
     return [Image.open(os.path.join(input_dir, image_file)) for image_file in image_files]
 
 
-def merge_images(*images: Image.Image, colour: tuple=(255, 255, 255)) -> None:
+def merge_images(*images: Image.Image, colour: tuple=(255, 255, 255)) -> Image.Image:
 
     # 读取第一张图片来获取尺寸
     W, H = images[0].size
